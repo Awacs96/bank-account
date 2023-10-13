@@ -1,0 +1,20 @@
+{
+  "name": "bank-account",
+  "version": "1.0.0",
+  "description": "Radme for Solidity project Contract logic in Solidity, unit tests in JS, basic frontend implementation to be provided",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Awacs96/bank-account.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Awacs96/bank-account/issues"
+  },
+  "homepage": "https://github.com/Awacs96/bank-account#readme"
+}
