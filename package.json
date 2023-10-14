@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Awacs96/bank-account/issues"
   },
-  "homepage": "https://github.com/Awacs96/bank-account#readme"
+  "homepage": "https://github.com/Awacs96/bank-account#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.18.1"
+  }
 }
