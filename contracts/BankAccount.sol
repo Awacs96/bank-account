@@ -47,6 +47,10 @@ contract BankAccount {
         require(owners.length <= 3, "Each account can have a maximum of 4 owners.");
 
         for(uint i; i < owners.length; i++) {
+            if (owners[i] == msg.sender) {
+                revert("No duplicate owners possible.");
+            }
+            
             for (uint j = i + 1; j < owners.length; j++) {
                 if (owners[i] == owners[j] || owners[i] == msg.sender || owners[j] == msg.sender) {
                     revert("No duplicate owners possible.");
