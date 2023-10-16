@@ -16,6 +16,10 @@ describe("BankAccount", function () {
     return { bankAccount, addr0, addr1, addr2, addr3, addr4 };
   }
 
+  async function deployBankAccountWithAccounts(owners=1, deposit=0, withdrawlAmount=[]) {
+    const { bankAccount, addr0, addr1, addr2, addr3, addr4 } = await loadFixture(deployBankAccount);
+  }
+
   describe("Deployment", () => {
     it("Should deploy without error", async () => {
       await loadFixture(deployBankAccount);
@@ -87,6 +91,13 @@ describe("BankAccount", function () {
       }
 
       await expect(bankAccount.connect(addr0).createAccount([])).to.be.reverted;
+    });
+  });
+
+  describe("Depositing", () => {
+    it("Should allow deposit to our account", async () => {
+      const { bankAccount, addr1, addr2 } = await loadFixture(deployBankAccount);
+      
     });
   });
   
